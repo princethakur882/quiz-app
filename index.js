@@ -49,7 +49,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const buttonElements = document.getElementById("ans-btn");
 const nextBtnElement = document.getElementById("next-btn");
-const mainbtn = document.querySelectorAll(".main-btn");
+// const mainbtn = document.querySelectorAll(".main-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -99,13 +99,14 @@ function selectAnswer(e) {
 
   Array.from(buttonElements.children).forEach((button) => {
     const isCorrect = button.dataset.correct === "true";
+
     if (isCorrect) {
       button.classList.add("correct");
     } else {
       button.classList.add("incorrect");
     }
     button.classList.remove("no-hover");
-
+    selectbtn.classList.add("border");
   });
 
   nextBtnElement.style.display = "block";
