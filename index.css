@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(86, 86, 223);
+}
+
+.container{
+    
+    margin: 40px auto;
+    width: 300px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.829);
+    border-radius: 10px;
+    
+
+
+}
+
+#ans-btn{
+    display: flex;
+    flex-direction: column;
+}
+.ans-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-btn{
+    margin: 5px 10px;
+    height: 35px;
+    border: none;
+
+}
+
+.no-hover:hover{
+    background-color: black;
+    color: white;
+}
+
+
+#next-btn{
+    margin: 10px 130px;
+    border: 1px solid rgba(0, 0, 0, 0.518);
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.correct{
+    background-color: rgba(34, 244, 34, 0.895);
+}
+
+.incorrect{
+    background-color: rgba(239, 58, 58, 0.943);
+}
